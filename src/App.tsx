@@ -19,7 +19,7 @@ export default function App() {
   });
 
   return (
-    <div className="relative antialiased selection:bg-brand-accent selection:text-white">
+    <div className="relative antialiased min-h-screen text-text-primary transition-colors duration-300">
       {/* Scroll Progress Bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-brand-accent z-[60] origin-left"
