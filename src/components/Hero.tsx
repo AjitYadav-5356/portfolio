@@ -19,11 +19,9 @@ export default function Hero() {
             <div className="relative">
               <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-border-subtle shadow-xl relative z-10 bg-bg-panel flex items-center justify-center shrink-0">
                 <img 
-                  src="./profile-pic.png" 
+                  src="https://github.com/AjitYadav-5356.png" 
                   alt={resumeData.name} 
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                  crossOrigin="anonymous"
                 />
               </div>
               <div className="absolute inset-0 bg-brand-accent/20 blur-xl rounded-full z-0 pointer-events-none scale-150" />
