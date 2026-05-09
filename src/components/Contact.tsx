@@ -49,34 +49,6 @@ export default function Contact() {
               </a>
             </div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="p-10 rounded-[2.5rem] bg-zinc-50 border border-black/5"
-          >
-            <h3 className="text-2xl font-bold mb-8 text-center">Quick Send</h3>
-            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label className="text-xs font-bold uppercase tracking-widest text-black/40 px-1">Name</label>
-                  <input type="text" className="w-full bg-white border border-black/5 rounded-2xl p-4 focus:outline-none focus:ring-2 focus:ring-brand-accent/20 transition-all font-medium" placeholder="John Doe" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-xs font-bold uppercase tracking-widest text-black/40 px-1">Email</label>
-                  <input type="email" className="w-full bg-white border border-black/5 rounded-2xl p-4 focus:outline-none focus:ring-2 focus:ring-brand-accent/20 transition-all font-medium" placeholder="john@example.com" />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <label className="text-xs font-bold uppercase tracking-widest text-black/40 px-1">Message</label>
-                <textarea rows={4} className="w-full bg-white border border-black/5 rounded-2xl p-4 focus:outline-none focus:ring-2 focus:ring-brand-accent/20 transition-all font-medium resize-none" placeholder="What's on your mind?"></textarea>
-              </div>
-              <button className="w-full py-4 bg-black text-white rounded-2xl font-bold hover:bg-zinc-800 transition-colors">
-                Send Message
-              </button>
-            </form>
-          </motion.div>
         </div>
 
         <footer className="mt-32 pt-10 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-6">
@@ -84,7 +56,7 @@ export default function Contact() {
             ajit<span className="text-brand-accent">.dev</span>
           </div>
           <div className="text-xs font-medium text-black/40 uppercase tracking-widest">
-            © 2024 {resumeData.name}. All Rights Reserved.
+            © 2026 {resumeData.name}. All Rights Reserved.
           </div>
           <div className="flex gap-4">
             <a href="#" className="text-xs font-bold text-black/40 hover:text-black transition-colors uppercase tracking-widest">Twitter</a>
