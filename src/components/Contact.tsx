@@ -58,11 +58,6 @@ export default function Contact() {
           <div className="text-xs font-medium text-black/40 uppercase tracking-widest">
             © 2026 {resumeData.name}. All Rights Reserved.
           </div>
-          <div className="flex gap-4">
-            <a href="#" className="text-xs font-bold text-black/40 hover:text-black transition-colors uppercase tracking-widest">Twitter</a>
-            <a href="#" className="text-xs font-bold text-black/40 hover:text-black transition-colors uppercase tracking-widest">Dribbble</a>
-            <a href="#" className="text-xs font-bold text-black/40 hover:text-black transition-colors uppercase tracking-widest">Medium</a>
-          </div>
         </footer>
       </div>
     </section>
