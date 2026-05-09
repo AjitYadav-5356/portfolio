@@ -17,11 +17,13 @@ export default function Hero() {
         >
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-8">
             <div className="relative">
-              <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-border-subtle shadow-xl relative z-10 bg-bg-panel">
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-border-subtle shadow-xl relative z-10 bg-bg-panel flex items-center justify-center shrink-0">
                 <img 
                   src="./profile-pic.png" 
                   alt={resumeData.name} 
                   className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                  crossOrigin="anonymous"
                 />
               </div>
               <div className="absolute inset-0 bg-brand-accent/20 blur-xl rounded-full z-0 pointer-events-none scale-150" />
@@ -104,18 +106,18 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="flex-1 bg-zinc-950 text-white p-4 sm:p-6 rounded-2xl font-mono text-[11px] sm:text-sm overflow-x-auto overflow-hidden relative flex flex-col justify-center border border-white/5 before:absolute before:inset-0 before:bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px)] before:[background-size:100%_4px] before:pointer-events-none">
-              <div className="text-zinc-600 whitespace-nowrap">// AI Accessibility Agent</div>
-              <div className="mt-2 text-zinc-300 whitespace-nowrap">
+            <div className="flex-1 bg-zinc-950 text-white p-4 sm:p-6 rounded-2xl font-mono text-[11px] sm:text-sm overflow-hidden relative flex flex-col justify-center border border-white/5 before:absolute before:inset-0 before:bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px)] before:[background-size:100%_4px] before:pointer-events-none">
+              <div className="text-zinc-600">// AI Accessibility Agent</div>
+              <div className="mt-2 text-zinc-300">
                 <span className="text-brand-accent">const</span> <span className="text-blue-400">aiAgent</span> = {'{'}
               </div>
-              <div className="ml-3 sm:ml-4 text-zinc-300 whitespace-nowrap">
-                loop: [<span className="text-emerald-400">"Audit"</span>, <span className="text-emerald-400">"Remediate"</span>, <span className="text-emerald-400">"Verify"</span>],
+              <div className="ml-3 sm:ml-4 text-zinc-300 flex flex-wrap gap-1">
+                loop: [<span className="text-emerald-400">"Audit"</span>, <span className="text-emerald-400">"Remediate"</span>],
               </div>
-              <div className="ml-3 sm:ml-4 text-zinc-300 whitespace-nowrap">
+              <div className="ml-3 sm:ml-4 text-zinc-300">
                 autonomous: <span className="text-amber-400">true</span>,
               </div>
-              <div className="ml-3 sm:ml-4 text-zinc-300 whitespace-nowrap">
+              <div className="ml-3 sm:ml-4 text-zinc-300">
                 status: <span className="text-emerald-400">"Resolved"</span>
               </div>
               <div className="text-zinc-300">{'}'};</div>
