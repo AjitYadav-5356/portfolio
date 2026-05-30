@@ -3,10 +3,10 @@ import { resumeData } from "../data";
 
 export default function Skills() {
   const categories = [
-    { name: "Frontend", items: resumeData.skills.languages.filter(l => ["React", "HTML5", "CSS3", "JavaScript", "TypeScript"].includes(l)) },
-    { name: "Backend", items: [".NET", "C#", ".NET Core", "REST APIs"] },
-    { name: "AI & Automation", items: resumeData.skills.ai },
-    { name: "Data & Cloud", items: [...resumeData.skills.databases, ...resumeData.skills.tools].filter(i => !i.startsWith("Advanced")).slice(0, 6) }
+    { name: "AI & Agentic Systems", items: resumeData.skills.ai },
+    { name: "Languages & Frameworks", items: resumeData.skills.languagesAndFrameworks },
+    { name: "Cloud & DevOps", items: resumeData.skills.devops },
+    { name: "Databases & Storage", items: resumeData.skills.databases }
   ];
 
   return (

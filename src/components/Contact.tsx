@@ -18,66 +18,37 @@ export default function Contact() {
               something great?
             </h2>
             <p className="text-lg text-text-secondary mb-10 leading-relaxed">
-              I'm always open to discussing new projects, creative ideas or
-              opportunities to be part of your vision.
+              I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
             </p>
 
             <div className="space-y-6 flex flex-col">
-              <a
-                href={`mailto:${resumeData.email}`}
-                aria-label="Send an email"
-                className="flex items-center gap-4 group p-4 rounded-2xl hover:bg-bg-panel transition-colors border border-transparent hover:border-border-subtle w-fit focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent/50"
-              >
+              <a href={`mailto:${resumeData.email}`} aria-label="Send an email" className="flex items-center gap-4 group p-4 rounded-2xl hover:bg-bg-panel transition-colors border border-transparent hover:border-border-subtle w-fit focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent/50">
                 <div className="w-12 h-12 rounded-full bg-bg-base border border-border-subtle flex items-center justify-center group-hover:bg-brand-accent text-text-primary group-hover:text-white transition-all group-hover:border-brand-accent">
                   <Mail size={20} />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-text-secondary uppercase tracking-widest">
-                    Email
-                  </div>
-                  <div className="text-lg font-bold text-text-primary group-hover:text-brand-accent transition-colors">
-                    {resumeData.email}
-                  </div>
+                  <div className="text-xs font-bold text-text-secondary uppercase tracking-widest">Email</div>
+                  <div className="text-lg font-bold text-text-primary group-hover:text-brand-accent transition-colors">{resumeData.email}</div>
                 </div>
               </a>
-
-              <a
-                href={resumeData.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn Profile"
-                className="flex items-center gap-4 group p-4 rounded-2xl hover:bg-bg-panel transition-colors border border-transparent hover:border-border-subtle w-fit focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent/50"
-              >
+              
+              <a href={resumeData.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="flex items-center gap-4 group p-4 rounded-2xl hover:bg-bg-panel transition-colors border border-transparent hover:border-border-subtle w-fit focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent/50">
                 <div className="w-12 h-12 rounded-full bg-bg-base border border-border-subtle flex items-center justify-center group-hover:bg-[#0077b5] text-text-primary group-hover:text-white transition-all group-hover:border-[#0077b5]">
                   <Linkedin size={20} />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-text-secondary uppercase tracking-widest">
-                    LinkedIn
-                  </div>
-                  <div className="text-lg font-bold text-text-primary group-hover:text-[#0077b5] transition-colors">
-                    {resumeData.name}
-                  </div>
+                  <div className="text-xs font-bold text-text-secondary uppercase tracking-widest">LinkedIn</div>
+                  <div className="text-lg font-bold text-text-primary group-hover:text-[#0077b5] transition-colors">{resumeData.name}</div>
                 </div>
               </a>
 
-              <a
-                href={resumeData.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub Profile"
-                className="flex items-center gap-4 group p-4 rounded-2xl hover:bg-bg-panel transition-colors border border-transparent hover:border-border-subtle w-fit focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent/50"
-              >
+              <a href={resumeData.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="flex items-center gap-4 group p-4 rounded-2xl hover:bg-bg-panel transition-colors border border-transparent hover:border-border-subtle w-fit focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent/50">
                 <div className="w-12 h-12 rounded-full bg-bg-base border border-border-subtle flex items-center justify-center group-hover:bg-text-primary text-text-primary group-hover:text-bg-base transition-all group-hover:border-text-primary">
                   <Github size={20} />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-text-secondary uppercase tracking-widest">
-                    GitHub
-                  </div>
-                  <div className="text-lg font-bold text-text-primary transition-colors">
-                    @ajityadav
-                  </div>
+                  <div className="text-xs font-bold text-text-secondary uppercase tracking-widest">GitHub</div>
+                  <div className="text-lg font-bold text-text-primary transition-colors">@ajityadav</div>
                 </div>
               </a>
             </div>

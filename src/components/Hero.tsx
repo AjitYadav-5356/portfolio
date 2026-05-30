@@ -104,12 +104,12 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="flex-1 bg-zinc-950 text-white p-4 sm:p-6 rounded-2xl font-mono text-[11px] sm:text-sm overflow-hidden relative flex flex-col justify-center border border-white/5 before:absolute before:inset-0 before:bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px)] before:[background-size:100%_4px] before:pointer-events-none">
+            <div className="flex-1 bg-zinc-950 text-white p-4 sm:p-6 rounded-2xl font-mono text-[11px] sm:text-sm relative flex flex-col justify-center border border-white/5 before:absolute before:inset-0 before:bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px)] before:[background-size:100%_4px] before:pointer-events-none overflow-hidden">
               <div className="text-zinc-600">// AI Accessibility Agent</div>
               <div className="mt-2 text-zinc-300">
                 <span className="text-brand-accent">const</span> <span className="text-blue-400">aiAgent</span> = {'{'}
               </div>
-              <div className="ml-3 sm:ml-4 text-zinc-300 flex flex-wrap gap-1">
+              <div className="ml-3 sm:ml-4 text-zinc-300 break-words flex flex-wrap gap-x-1">
                 loop: [<span className="text-emerald-400">"Audit"</span>, <span className="text-emerald-400">"Remediate"</span>],
               </div>
               <div className="ml-3 sm:ml-4 text-zinc-300">

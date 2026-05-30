@@ -6,9 +6,11 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import { motion, useScroll, useSpring } from "motion/react";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
   const { scrollYProgress } = useScroll();
@@ -33,6 +35,9 @@ export default function App() {
         
         {/* Experience Section */}
         <Experience />
+
+        {/* Projects Section */}
+        <Projects />
         
         {/* Skills Section */}
         <Skills />
@@ -40,6 +45,7 @@ export default function App() {
         {/* Contact & Footer Section */}
         <Contact />
       </main>
+      <Analytics />
     </div>
   );
 }
